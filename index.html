@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="style.css">
+	<title>Nosotros</title>
+	<script>
+		function getDate() {
+			let date1 = new Date(); 
+			let date2 = new Date("09/03/2018"); 
+			let Difference_In_Time = date1.getTime() - date2.getTime();  
+			let Difference_In_Days = Difference_In_Time / (1000 * 3600 * 24); 
+			document.getElementById("demo").innerHTML = Math.trunc(Difference_In_Days);
+		}
+	</script>	  
+</head>
+<body onload="getDate()">
+<div id="main">
+	<p id="day">Días de Novios:</p>
+	<p id="demo"></p>
+</div>
+<div id="love">
+	<p>Carlos <span class="heart"></span> María</p>
+</div>
+</body>
+</html>
